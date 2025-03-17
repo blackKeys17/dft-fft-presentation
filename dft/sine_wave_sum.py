@@ -16,5 +16,9 @@ sampled = np.sin((sample * 2 * np.pi) * freq1) + np.sin((sample * 2 * np.pi) * f
 plt.plot(x, sin1, c="green", alpha=0.4)
 plt.plot(x, sin2, c="orange", alpha=0.4)
 plt.plot(x, sin1 + sin2, c="black")
-# plt.scatter(sample, sampled)
+
+plt.figure()
+plt.plot(x, sin1 + sin2, c="black")
+plt.scatter(sample, sampled, c="red")
+
 plt.show()
