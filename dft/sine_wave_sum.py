@@ -26,5 +26,6 @@ plt.scatter(sample, sampled, c="red")
 # Showing the sampled signal
 plt.figure()
 plt.plot(sample, sampled, c="black")
+print(",".join(list([f"{float(i):.5f}" for i in sampled])))
 
 plt.show()
